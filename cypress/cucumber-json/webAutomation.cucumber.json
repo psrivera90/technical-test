@@ -1,0 +1,63 @@
+[
+  {
+    "description": "As a user, I want to search for the word “automation” on Google and get specific information from Wikipedia to make sure I know the historical details about the first automated process.",
+    "keyword": "Feature",
+    "name": "Web automation",
+    "line": 1,
+    "id": "web-automation",
+    "tags": [],
+    "uri": "webAutomation.feature",
+    "elements": [
+      {
+        "id": "web-automation;find-the-year-of-the-first-automatic-process-on-wikipedia-and-take-a-screenshot",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "find the year of the first automatic process on wikipedia and take a screenshot",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user on Google page",
+            "result": {
+              "status": "passed",
+              "duration": 1353000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "user is redirected to wikipedia page after searching for automation",
+            "result": {
+              "status": "passed",
+              "duration": 6822000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "user finds the year of the first automatic process",
+            "result": {
+              "status": "passed",
+              "duration": 410000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "user user takes a screenshot of the wikipedia page",
+            "result": {
+              "status": "passed",
+              "duration": 786000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

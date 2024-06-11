@@ -1,0 +1,52 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Logout",
+    "line": 1,
+    "id": "logout",
+    "tags": [],
+    "uri": "logout.feature",
+    "elements": [
+      {
+        "id": "logout;user-logs-out-from-the-main-page",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "User logs out from the main page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "authenticated user on the main page",
+            "result": {
+              "status": "passed",
+              "duration": 794000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user click on logout button",
+            "result": {
+              "status": "passed",
+              "duration": 393000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "user is redirected to the login page",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

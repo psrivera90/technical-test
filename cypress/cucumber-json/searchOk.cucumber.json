@@ -1,0 +1,53 @@
+[
+  {
+    "description": "    As a user I want to search for hotels by location, dates and number of people to find available acommodation options",
+    "keyword": "Feature",
+    "name": "Successful hotel search",
+    "line": 1,
+    "id": "successful-hotel-search",
+    "tags": [],
+    "uri": "searchOk.feature",
+    "elements": [
+      {
+        "id": "successful-hotel-search;successful-search-with-valid-criteria",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Successful search with valid criteria",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user visit hotel page",
+            "result": {
+              "status": "passed",
+              "duration": 3411000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "user enter valid search criteria",
+            "result": {
+              "status": "passed",
+              "duration": 1958000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "a list of hotels is shown",
+            "result": {
+              "status": "passed",
+              "duration": 7761000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

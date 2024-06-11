@@ -1,0 +1,132 @@
+[
+  {
+    "description": "    As a user I want to search for hotels by location, dates and number of people to find available acommodation options",
+    "keyword": "Feature",
+    "name": "Hotel search",
+    "line": 1,
+    "id": "hotel-search",
+    "tags": [],
+    "uri": "searchHotel.feature",
+    "elements": [
+      {
+        "id": "hotel-search;successful-search-with-valid-criteria",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Successful search with valid criteria",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user visit hotel page",
+            "result": {
+              "status": "passed",
+              "duration": 3830000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "user enter valid search criteria",
+            "result": {
+              "status": "passed",
+              "duration": 1970000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "a list of hotels is shown",
+            "result": {
+              "status": "passed",
+              "duration": 7261000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "hotel-search;search-failed-due-to-not-entering-search-criteria",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Search failed due to not entering search criteria",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user visit hotel page",
+            "result": {
+              "status": "passed",
+              "duration": 3380000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "user does not enter search criteria",
+            "result": {
+              "status": "passed",
+              "duration": 1575000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "error message is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 97000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "hotel-search;failed-search-for-invalid-city",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Failed search for invalid city",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user visit hotel page",
+            "result": {
+              "status": "passed",
+              "duration": 3489000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "user enter invalid city",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `:nth-child(1) > .suggestion-text___2xeQh > .title___eYqNg > b`, but never found it.\n    at Context.eval (cypress/pages/homePage.js:25:46)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "error message is displayed",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

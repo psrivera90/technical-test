@@ -7,7 +7,7 @@ module.exports = defineConfig({
       return require("./cypress/plugins/index.js")(on, config);
     },
     specPattern: "cypress/features/**/*.feature",
-    baseUrl: "https://dealerportal-test.santanderconsumerusa.com",
+    baseUrl: "https://www.google.com.ar",
     chromeWebSecurity: false,
     viewportWidth: 1920,
     viewportHeight: 1080,

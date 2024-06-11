@@ -13,13 +13,13 @@ class wikiPage {
             .contains(data.Automated_process)
             .contains(data.Automated_keyword)
             .should('be.visible')
-            .scrollIntoView()
+            .as('targetParagraph')
         })
     }
 
     screenshot () {
-        cy.screenshot({capture : 'viewport'})
+            cy.get('@targetParagraph').screenshot({overwrite : true})
+        }
     }
-}
 
 module.exports = new wikiPage();

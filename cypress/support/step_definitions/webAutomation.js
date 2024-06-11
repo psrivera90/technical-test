@@ -14,6 +14,6 @@ When('user finds the year of the first automatic process', () => {
     wikiPage.findAutomaticProcess()
 })
 
-Then('user user takes a screenshot of the wikipedia page', () => {
+Then('the user takes a screenshot of the wikipedia page', () => {
     wikiPage.screenshot()
 })

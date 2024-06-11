@@ -6,6 +6,6 @@ As a user, I want to search for the word “automation” on Google and get spec
     Given user on Google page
     And user is redirected to wikipedia page after searching for automation
     When user finds the year of the first automatic process
-    Then user user takes a screenshot of the wikipedia page
+    Then the user takes a screenshot of the wikipedia page
 
 

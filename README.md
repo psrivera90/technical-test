@@ -109,11 +109,13 @@ The screenshot generated from the tests is stored in the _cypress/screenshots_ f
 Contributions are welcome! Please follow these steps to contribuite:
 
   1. Fork the repository
+     
   2. Create a new branch
      
          git checkout -b feature/your-feature
 
   3. Make your changes
+     
   4. Commit your changes
 
          git commit -m 'Add some feature'

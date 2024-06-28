@@ -14,8 +14,9 @@ This test efficiently verifies the availability and accuracy of information on t
   - [Feature file](#feature-file)
   - [Step definitions](#step-definitions)
 - [Fixtures](#fixtures)
-- [Page objects](#page-objects)
 - [Common functions](#common-functions)
+- [Page objects](#page-objects)
+- [Commands](#commands)
 - [Screenshots](#screenshots)
 - [Contributions](#contributions)
 
@@ -23,11 +24,11 @@ This test efficiently verifies the availability and accuracy of information on t
 
 1. Clone this repository to your local machine
    
-       git clone https://github.com/psrivera90/technicalTest/
+       git clone https://github.com/psrivera90/technical-test/
 
 2. Navigate to the project folder
    
-       cd technicalTest
+       cd technical-test
 
 3. Install the dependencies
    
@@ -87,13 +88,17 @@ The step definitions file _'webAutomation.js'_ is located in _'cypress/support/s
 
 The fixture file _'dataWiki.json'_ located in _'cypress/fixtures'_ contains certain data used in the tests.
 
+## Common functions
+
+The _'commonFunctions.js'_ file is located in _'cypress/functions'_ and contains reusable functions for testing.
+
 ## Page objects
 
 The Page Objects files are located in _'cypress/pages'_ and contain classes representing different pages of the application. These files encapsulate the page elements and related actions for better organization and maintainability.
 
-## Common functions
+## Commands
 
-The _commonFunctions.js_ file is located in _'cypress/functions'_ and contains reusable functions for testing.
+The custom comands are defined in the _'cypress/support/commands.js'_ file. These commands extend Cypress with reusable actions and can be used to simplify and standardize test scripts.
 
 ## Screenshots
 

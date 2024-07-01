@@ -20,40 +20,50 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 6,
-            "name": "user on Google page",
+            "name": "the user is on Google page",
             "result": {
               "status": "passed",
-              "duration": 1207000000
+              "duration": 866000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 7,
-            "name": "user is redirected to wikipedia page after searching for automation",
+            "name": "the user searches for the word automation",
             "result": {
               "status": "passed",
-              "duration": 6521000000
+              "duration": 1587000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the user enters the link of the Wikipedia page",
+            "result": {
+              "status": "passed",
+              "duration": 328000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 8,
-            "name": "user finds the year of the first automatic process",
+            "line": 9,
+            "name": "the user finds the year of the first automatic process",
             "result": {
               "status": "passed",
-              "duration": 887000000
+              "duration": 522000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 9,
-            "name": "the user takes a screenshot of the wikipedia page",
+            "line": 10,
+            "name": "a screenshot is made of the information found",
             "result": {
               "status": "passed",
-              "duration": 490000000
+              "duration": 488000000
             }
           }
         ]

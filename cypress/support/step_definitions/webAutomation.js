@@ -1,19 +1,22 @@
 import googlePage from "../../pages/googlePage"
 import wikiPage from "../../pages/wikiPage"
 
-Given('user on Google page', () => {
+Given('the user is on Google page', () => {
     cy.visitGoogle()
 })
 
-And('user is redirected to wikipedia page after searching for automation', () => {
+And('the user searches for the word automation', () => {
     googlePage.googleSearchAutomation()
+})
+
+And('the user enters the link of the Wikipedia page', () => {
     wikiPage.checkWikipediaPage()
 })
 
-When('user finds the year of the first automatic process', () => {
+When('the user finds the year of the first automatic process', () => {
     wikiPage.findAutomaticProcess()
 })
 
-Then('the user takes a screenshot of the wikipedia page', () => {
+Then('a screenshot is made of the information found', () => {
     wikiPage.screenshot()
 })

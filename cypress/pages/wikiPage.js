@@ -1,7 +1,10 @@
+const googlePage = require("./googlePage")
+
 class wikiPage {
 
     checkWikipediaPage () {
         cy.fixture('dataWiki').then((data) => {
+            cy.get(googlePage.selectors.divSearch).find('a').contains(data.Wikipedia).click()
             cy.url().should('eq', data.Wiki_page)
         })
     }
